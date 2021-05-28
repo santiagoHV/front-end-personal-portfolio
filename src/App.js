@@ -11,9 +11,12 @@ function App() {
   return (
     <Router>
       <Navbar />
-      <Switch>
-        <Route path="/" component={AboutPage}></Route>
-      </Switch>
+      <div className='content'>
+          <Switch  >
+              <Route path="/" component={AboutPage}></Route>
+          </Switch>
+      </div>
+
     </Router>
   );
 }

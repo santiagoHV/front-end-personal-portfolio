@@ -4,7 +4,7 @@ import PersonalInfo from './about/personal_info/personalInfo'
 
 const AboutPage = () => {
     return (
-        <div>
+        <div >
             <HeaderAbout />
             <PersonalInfo />
         </div>
