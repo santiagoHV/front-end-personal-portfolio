@@ -1,0 +1,11 @@
+.navbar {
+    font-family: 'Farro', sans-serif, bold;
+    background-color: rgb(21, 78, 107);
+    z-index: 2;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.navbar img {
+    margin: 0 20px 0 20px;
+}
