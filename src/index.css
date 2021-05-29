@@ -14,3 +14,7 @@ code {
     height: 100%;
     width: calc(100% - 250px);
 }
+
+.particles-js.navUnToggle{
+    width: 100%
+}

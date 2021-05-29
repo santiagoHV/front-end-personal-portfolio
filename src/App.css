@@ -30,7 +30,13 @@
 
 .content{
   margin-left: 250px;
+  transition-duration: 0.5s;
 }
+
+.content.navUnToggle{
+  margin-left: 0px;
+}
+
 
 @keyframes App-logo-spin {
   from {

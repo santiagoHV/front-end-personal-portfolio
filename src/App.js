@@ -1,19 +1,24 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.min.js'
 import './App.css'
-import React from 'react'
+import React, {useState} from 'react'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import Navbar from './components/navbar/navbar'
 import AboutPage from './pages/about'
 // import './assets/js/app'
 
 function App() {
+
+
+    const [toggleSide, setToggleSide] = useState(true)
+
   return (
     <Router>
-      <Navbar />
-      <div className='content'>
+      {/*<button onClick={()=>{setToggleSide(!toggleSide)}}>desplegar</button>*/}
+      <Navbar show={toggleSide}/>
+      <div className={`content ${toggleSide ? '' : 'navUnToggle'} `}>
           <Switch  >
-              <Route path="/" component={AboutPage}></Route>
+              <Route path="/" component={() => <AboutPage showNav={toggleSide} />} />
           </Switch>
       </div>
 

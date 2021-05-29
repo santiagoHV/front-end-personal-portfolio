@@ -1,21 +1,102 @@
-import React from 'react';
-import {Nav, Navbar} from 'react-bootstrap'
+import React, {useState} from 'react';
+import { Navbar} from 'react-bootstrap'
 import './navbar.css'
 import Logo from '../../assets/img/logo.png'
 
-const NavbarComponent = () => {
+
+const NavbarComponent = (props) => {
+
+    const [localNavItems, setLocalNavItems] = useState([
+        {
+            'title': 'Home',
+            'route': '#header',
+            'isActive': true
+        },
+        {
+            'title': 'About me',
+            'route': '#about-me',
+            'isActive': false
+        },
+        {
+            'title': 'Study',
+            'route': '#',
+            'isActive': false
+        },
+        {
+            'title': 'Contact me',
+            'route': '#',
+            'isActive': false
+        }
+    ])
+    const [navItems, setNavItems] = useState([
+        {
+            'title': 'Skills',
+            'route': '/',
+            'isActive': false
+        },
+        {
+            'title': 'Personal projects',
+            'route': '/',
+            'isActive': false
+        },
+        {
+            'title': 'Experience',
+            'route': '/',
+            'isActive': false
+        },
+    ])
+    // const [toggleNav, setToggleNav]  =  useState()
+
+
+    const renderLocalItems = (list) => {
+        console.log(`show ${props.show}`)
+        return (
+            <div className={`sidebar__items`}>
+                {
+                    list.map((item) => {
+                        return(
+                            <a className={`sidebar__items--item ${item.isActive ? 'active' : ''}`}
+                               href={item.route}
+                               onClick={()=>{selectItem(item.title)}} >
+                                {item.title}
+                            </a>
+                        )
+                    })
+                }
+            </div>
+        )
+    };
+
+
+    const selectItem = itemName => {
+        let localItems = [...localNavItems]
+        let items = [...navItems]
+
+
+        localItems.forEach(item =>{
+            item.isActive = item.title === itemName;
+        })
+
+        items.forEach(item =>{
+            item.isActive = item.title === itemName;
+        })
+
+        setLocalNavItems(localItems)
+        setNavItems(items)
+    }
 
     return(
 
-        <div className="sidebar">
-            {/*<ul>*/}
-            {/*    <li>*/}
-            {/*    </li>*/}
-            {/*</ul>*/}
-            <Nav.Link className="active" href="#home">Home</Nav.Link>
-            <Nav.Link href="#about-me">About me</Nav.Link>
-            <Nav.Link href="">Contact</Nav.Link>
-            <Nav.Link href="">About</Nav.Link>
+        <div className={`sidebar ${props.show ? '' : 'unActive'}`}>
+            <div className='sidebar__content'>
+                <Navbar.Brand className='sidebar__logo-container'>
+                    <img src={Logo} height={50} width={50} alt="logo"/>
+                    <h3>Santiago Herrera</h3>
+                </Navbar.Brand>
+
+                {renderLocalItems(localNavItems)}
+                {renderLocalItems(navItems)}
+            </div>
         </div>
 
         // <Navbar variant='dark'expand='md' className='navbar'>

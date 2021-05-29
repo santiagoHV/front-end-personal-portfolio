@@ -7,7 +7,7 @@ import './header.css'
 import {Col, Container, Image, Row} from 'react-bootstrap' 
 import Particles from 'react-particles-js'
 
-const HeaderAbout = () => {
+const HeaderAbout = ({showNav}) => {
     return (
         <div id='header'>
             
@@ -70,7 +70,7 @@ const HeaderAbout = () => {
                     },
                 },
             }}
-            className="particles-js"
+            className={`particles-js ${showNav ? '' : 'navUnToggle'}`}
             />
         </div>
     )
