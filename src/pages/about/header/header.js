@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Photo from '../../../assets/img/personal-photo.jpg'
 import GithubLogo from '../../../assets/img/github.png'
 import FaceboookLogo from '../../../assets/img/facebook.png'
@@ -7,12 +7,27 @@ import './header.css'
 import {Col, Container, Image, Row} from 'react-bootstrap' 
 import Particles from 'react-particles-js'
 
+const getWindowDimensions = () => {
+    const { innerWidth: width, innerHeight: height } = window;
+    return {
+        width,
+        height
+    };
+}
+
 const HeaderAbout = ({showNav}) => {
+    const [countParticles, setCountParticles] = useState((getWindowDimensions().height * getWindowDimensions().width) * 0.00015);
+
+    const area = () => {
+        console.log(`width ${getWindowDimensions().width}`)
+        console.log(`height ${getWindowDimensions().height}`)
+        console.log(`area ${getWindowDimensions().width * getWindowDimensions().height}`)
+    }
+
     return (
         <div id='header'>
-            
             <Col xs={11} md={6} className='center-box'>
-                <div className="center-box__background"></div>
+                <div className="center-box__background" />
                 <Container fluid className="center-box__content">
                     <Row>
                         <Col xs={10} sm={8} lg={7} xl={4} className="m-auto photo_container">
@@ -39,7 +54,7 @@ const HeaderAbout = ({showNav}) => {
                 params={{
                 "particles": {
                     "number": {
-                        "value": 200
+                        "value": countParticles
                     },
                     "size": {
                         "value": 3

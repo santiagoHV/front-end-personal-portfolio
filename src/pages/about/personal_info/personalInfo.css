@@ -1,13 +1,19 @@
 .personal-info {
-    background-color: white;
+    background-color: rgb(239, 160, 11);
     padding-top: 20px;
     height: 100vh;
+    font-family: 'Roboto Condensed', sans-serif;
+
 }
 
 .info-container {
     background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 20px;
+    /*border-radius: 20px;*/
     height: 90vh;
     margin: auto;
     padding: 30px;
 }
+
+.info-container__title{}
+
+.info-container__info{}

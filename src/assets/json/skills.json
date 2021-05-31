@@ -1,0 +1,212 @@
+{
+  "skills": [
+    {
+      "name": "HTML5",
+      "percent": 80,
+      "svg": "",
+      "inProgress": true,
+      "category": "language",
+      "sub-category": "front-end"
+    },
+    {
+      "name": "CSS3",
+      "percent": 65,
+      "svg": "",
+      "inProgress": true,
+      "category": "language",
+      "sub-category": "front-end"
+    },
+    {
+      "name": "JavaScript",
+      "percent": 85,
+      "svg": "",
+      "inProgress": true,
+      "category": "language",
+      "sub-category": "front-end"
+    },
+    {
+      "name": "TypeScript",
+      "percent": 65,
+      "svg": "",
+      "inProgress": false,
+      "category": "language",
+      "sub-category": "front-end"
+    },
+    {
+      "name": "Python",
+      "percent": 80,
+      "svg": "",
+      "inProgress": true,
+      "category": "language",
+      "sub-category": "back-end data ia"
+    },
+    {
+      "name": "Java",
+      "percent": 85,
+      "svg": "",
+      "inProgress": false,
+      "category": "language",
+      "sub-category": "back-end desktop"
+    },
+    {
+      "name": "Dart",
+      "percent": 50,
+      "svg": "",
+      "inProgress": true,
+      "category": "language",
+      "sub-category": "mobile other"
+    },
+    {
+      "name": "C++",
+      "percent": 30,
+      "svg": "",
+      "inProgress": true,
+      "category": "language",
+      "sub-category": "desktop other"
+    },
+    {
+      "name": "Flutter",
+      "percent": 60,
+      "svg": "",
+      "inProgress": true,
+      "category": "framework",
+      "sub-category": "mobile"
+    },
+    {
+      "name": "React.js",
+      "percent": 50,
+      "svg": "",
+      "inProgress": true,
+      "category": "framework",
+      "sub-category": "front-end"
+    },
+    {
+      "name": "Angular",
+      "percent": 25,
+      "svg": "",
+      "inProgress": false,
+      "category": "framework",
+      "sub-category": "front-end"
+    },
+    {
+      "name": "Bootstrap",
+      "percent": 60,
+      "svg": "",
+      "inProgress": true,
+      "category": "framework",
+      "sub-category": "front-end"
+    },
+    {
+      "name": "Flask",
+      "percent": 85,
+      "svg": "",
+      "inProgress": true,
+      "category": "framework",
+      "sub-category": "back-end"
+    },
+    {
+      "name": "Django",
+      "percent": 0,
+      "svg": "",
+      "inProgress": false,
+      "category": "framework",
+      "sub-category": "back-end"
+    },
+    {
+      "name": "Pytorch",
+      "percent": 10,
+      "svg": "",
+      "inProgress": false,
+      "category": "framework",
+      "sub-category": "data ia"
+    },
+    {
+      "name": "TensorFlow",
+      "percent": 15,
+      "svg": "",
+      "inProgress": true,
+      "category": "framework",
+      "sub-category": "data ia"
+    },
+    {
+      "name": "Scrum",
+      "percent": 40,
+      "svg": "",
+      "inProgress": true,
+      "category": "...",
+      "sub-category": "agile"
+    },
+    {
+      "name": "XP",
+      "percent": 15,
+      "svg": "",
+      "inProgress": false,
+      "category": "...",
+      "sub-category": "agile"
+    },
+    {
+      "name": "Git",
+      "percent": 85,
+      "svg": "",
+      "inProgress": false,
+      "category": "tech",
+      "sub-category": "other"
+    },
+    {
+      "name": "Github",
+      "percent": 0,
+      "svg": "",
+      "inProgress": true,
+      "category": "tech",
+      "sub-category": "other"
+    },
+    {
+      "name": "JavaFX",
+      "percent": 0,
+      "svg": "",
+      "inProgress": false,
+      "category": "tech",
+      "sub-category": "front-end"
+    },
+    {
+      "name": "PostgreSQL",
+      "percent": 50,
+      "svg": "",
+      "inProgress": false,
+      "category": "tech",
+      "sub-category": "db"
+    },
+    {
+      "name": "MySQL",
+      "percent": 35,
+      "svg": "",
+      "inProgress": false,
+      "category": "tech",
+      "sub-category": "db"
+    },
+    {
+      "name": "Node.js/NPM",
+      "percent": 60,
+      "svg": "",
+      "inProgress": true,
+      "category": "tech",
+      "sub-category": "other"
+    },
+    {
+      "name": "pip",
+      "percent": 0,
+      "svg": "",
+      "inProgress": true,
+      "category": "tech",
+      "sub-category": "other"
+    },
+    {
+      "name": "MongoDB",
+      "percent": 0,
+      "svg": "",
+      "inProgress": true,
+      "category": "tech",
+      "sub-category": "db"
+    }
+  ]
+}
