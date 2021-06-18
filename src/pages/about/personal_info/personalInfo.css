@@ -1,5 +1,5 @@
 .personal-info {
-    background-color: rgb(239, 160, 11);
+    background-color: white;
     padding-top: 20px;
     height: 100vh;
     font-family: 'Roboto Condensed', sans-serif;
@@ -7,13 +7,53 @@
 }
 
 .info-container {
-    background-color: rgba(255, 255, 255, 0.5);
+    /*background-color: rgba(255, 255, 255, 0.5);*/
     /*border-radius: 20px;*/
     height: 90vh;
     margin: auto;
     padding: 30px;
 }
 
-.info-container__title{}
+.info-container__title{
+    width: 100%;
+    background-color: rgb(239, 160, 11);
+    padding: 15px;
 
-.info-container__info{}
+    border-radius: 20px;
+    display: flex;
+}
+
+.info-container__title div{
+    margin: auto;
+    border-bottom: 5px solid black;
+    width: 200px;
+    font-size: 35px;
+    color: white;
+    text-align: center;
+}
+
+.info-container__info{
+    padding: 20px 0 20px 0;
+    font-size: 20px;
+}
+
+.info-container__info--item{
+    margin-top: 20px;
+
+}
+
+.info-container--description{
+    text-align: justify;
+}
+
+.info-container__items{}
+
+
+.info-container__info--photo{
+    padding-bottom: 50px;
+
+}
+
+strong{
+    color: rgb(21, 78, 107)
+}

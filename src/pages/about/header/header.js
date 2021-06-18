@@ -18,12 +18,6 @@ const getWindowDimensions = () => {
 const HeaderAbout = ({showNav}) => {
     const [countParticles, setCountParticles] = useState((getWindowDimensions().height * getWindowDimensions().width) * 0.00015);
 
-    const area = () => {
-        console.log(`width ${getWindowDimensions().width}`)
-        console.log(`height ${getWindowDimensions().height}`)
-        console.log(`area ${getWindowDimensions().width * getWindowDimensions().height}`)
-    }
-
     return (
         <div id='header'>
             <Col xs={11} md={6} className='center-box'>
@@ -41,9 +35,9 @@ const HeaderAbout = ({showNav}) => {
                     </Row>
                     <Row>
                         <div className='logo-container'>
-                            <img src={FaceboookLogo} className='net-logos'/>
-                            <img src={InstagramLogo} className='net-logos'/>
-                            <img src={GithubLogo} className='net-logos'/>
+                            <img alt={'Facebook link'} src={FaceboookLogo} className='net-logos'/>
+                            <img alt={'Instagram link'} src={InstagramLogo} className='net-logos'/>
+                            <img alt={'Github link'} src={GithubLogo} className='net-logos'/>
                         </div>
                         
                     </Row>

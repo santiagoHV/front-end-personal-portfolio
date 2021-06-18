@@ -6,32 +6,33 @@ import Logo from '../../assets/img/logo.png'
 
 const NavbarComponent = (props) => {
 
+
     const [localNavItems, setLocalNavItems] = useState([
         {
             'title': 'Home',
-            'route': '#header',
+            'route': '/home#header',
             'isActive': true
         },
         {
             'title': 'About me',
-            'route': '#about-me',
+            'route': '/home#about-me',
             'isActive': false
         },
         {
             'title': 'Study',
-            'route': '#',
+            'route': '/home#',
             'isActive': false
         },
         {
             'title': 'Contact me',
-            'route': '#',
+            'route': '/home#',
             'isActive': false
         }
     ])
     const [navItems, setNavItems] = useState([
         {
             'title': 'Skills',
-            'route': '/',
+            'route': '/skills',
             'isActive': false
         },
         {

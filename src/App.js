@@ -2,9 +2,10 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.min.js'
 import './App.css'
 import React, {useState} from 'react'
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import {BrowserRouter as Router, Switch, Route, Redirect} from 'react-router-dom'
 import Navbar from './components/navbar/navbar'
 import AboutPage from './pages/about'
+import Skills from "./pages/skills/skills";
 // import './assets/js/app'
 
 function App() {
@@ -18,7 +19,9 @@ function App() {
       <Navbar show={toggleSide}/>
       <div className={`content ${toggleSide ? '' : 'navUnToggle'} `}>
           <Switch  >
-              <Route path="/" component={() => <AboutPage showNav={toggleSide} />} />
+              <Route path="/home" component={() => <AboutPage showNav={toggleSide} />}/>
+              <Route path="/skills" component={() => <Skills/>} />
+              <Redirect to='/home'/>
           </Switch>
       </div>
 

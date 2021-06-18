@@ -1,0 +1,13 @@
+{
+  "name": "Santiago Herrera Velásquez",
+  "titles": ["Systems engineer student","Developer in development"],
+  "description": "I'm %%%, a young engineer system student, passionate about learning and good challenges. ",
+  "birthdate": "23-10-2001",
+  "city-from": "Bogotá DC",
+  "country-from": "Colombia",
+  "city-live": "Fusagasugá",
+  "country-live": "Colombia",
+  "mails": ["santiherreravelas@gmail.com","sherrerav@correo.udistrital.edu.co"],
+  "interests": ["Web development","Mobile development", "Front-end development", "Back-end development","Data science","AI"],
+  "hobby-interests": ["Music edition", "Guitar and bass playing", "Basketball"]
+}
