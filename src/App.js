@@ -15,7 +15,7 @@ function App() {
     const [toggleSide, setToggleSide] = useState(true)
 
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router>
       {/*<button onClick={()=>{setToggleSide(!toggleSide)}}>desplegar</button>*/}
       <Navbar show={toggleSide}/>
       <div className={`content ${toggleSide ? '' : 'navUnToggle'} `}>
