@@ -21,7 +21,7 @@
         "web-vitals": "^1.0.1"
     },
     "scripts": {
-        "predeploy": "npm run build && echo 'about.santiago-herrera.rocks' > ./build/CNAME",
+        "predeploy": "npm run build && echo about.santiago-herrera.rocks > ./build/CNAME",
         "deploy": "gh-pages -d build",
         "start": "react-scripts start",
         "build": "react-scripts build",
