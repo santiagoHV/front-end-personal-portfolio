@@ -57,7 +57,7 @@ const NavbarComponent = (props) => {
                     list.map((item) => {
                         return(
                             <Link className={`nav-link sidebar__items--item ${item.isActive ? 'active' : ''}`}
-                               href={item.route}
+                               to={item.route}
                                onClick={()=>{selectItem(item.title)}} >
                                 {item.title}
                             </Link>
