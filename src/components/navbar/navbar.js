@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import { Navbar} from 'react-bootstrap'
 import './navbar.css'
 import Logo from '../../assets/img/logo.png'
+import {Link} from "react-router-dom";
 
 
 const NavbarComponent = (props) => {
@@ -55,11 +56,11 @@ const NavbarComponent = (props) => {
                 {
                     list.map((item) => {
                         return(
-                            <a className={`nav-link sidebar__items--item ${item.isActive ? 'active' : ''}`}
+                            <Link className={`nav-link sidebar__items--item ${item.isActive ? 'active' : ''}`}
                                href={item.route}
                                onClick={()=>{selectItem(item.title)}} >
                                 {item.title}
-                            </a>
+                            </Link>
                         )
                     })
                 }
@@ -105,20 +106,6 @@ const NavbarComponent = (props) => {
             </div>
         </div>
 
-        // <Navbar variant='dark'expand='md' className='navbar'>
-        //     <Navbar.Brand className='m-2' href='/'>
-        //         <img src={Logo} height={40}/>
-        //         SANTIAGO HERRERA
-        //     </Navbar.Brand>
-        //     <Navbar.Toggle className='m-2' aria-controls='basic-navbar-nav' />
-        //     <Navbar.Collapse className='m-2' id='basic-navbar-nav'>
-        //         <Nav className='ms-auto navbar-items'>
-        //             <Nav.Link href='/'>About me</Nav.Link>
-        //             <Nav.Link href='/'>Skills</Nav.Link>
-        //             <Nav.Link href='/'>Contact me</Nav.Link>
-        //         </Nav>
-        //     </Navbar.Collapse>
-        // </Navbar>
     )
 }
 

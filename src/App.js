@@ -2,7 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.min.js'
 import './App.css'
 import React, {useState} from 'react'
-import {HashRouter as Router, Switch, Route, Redirect} from 'react-router-dom'
+import {BrowserRouter as Router, Switch, Route, Redirect} from 'react-router-dom'
 import Navbar from './components/navbar/navbar'
 import AboutPage from './pages/about'
 import Skills from "./pages/skills/skills";
@@ -22,10 +22,9 @@ function App() {
           <Switch  >
               <Route path="/home" component={() => <AboutPage showNav={toggleSide} />}/>
               <Route path="/skills" component={() => <Skills/>} />
-              <Redirect to='/home'/>
+              <Redirect to='/home#header'/>
           </Switch>
       </div>
-
     </Router>
   );
 }
