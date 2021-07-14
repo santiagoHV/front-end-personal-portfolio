@@ -12,8 +12,7 @@ const PersonalInfo = () => {
 
     const description2 = aboutme.description.split('%%%')
     return (
-        <div className="personal-info" id='about-me'>
-            <Col xs={12 } md={10} className="info-container">
+        <section className="personal-info" id='about-me'>
                 <div className="info-container__title">
                     <div>About me</div>
                 </div>
@@ -63,8 +62,7 @@ const PersonalInfo = () => {
                     </Container>
 
                 </Container>
-            </Col>
-        </div>
+        </section>
     );
 }
 

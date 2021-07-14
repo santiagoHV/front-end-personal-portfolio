@@ -1,7 +1,12 @@
 .personal-info {
     background-color: white;
-    padding-top: 20px;
-    height: 100vh;
+    /*padding-top: 20px;*/
+    /*min-height: 100vh;*/
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    padding: 20px 10% 20px 10%;
+    /*quitar el padding en version movil*/
     font-family: 'Roboto Condensed', sans-serif;
 
 }

@@ -1,0 +1,48 @@
+#study{
+    background-color: grey;
+    background-image: url("../../../assets/img/books.jpg");
+    background-repeat: no-repeat !important;
+    background-attachment: scroll !important;
+    background-position: center center !important;
+    z-index: auto;
+    background-size: cover !important;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+    box-shadow: 5px 5px black;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.study-container{
+    height: 100%;
+}
+
+.container__study-title{
+    display: flex;
+    align-content: center;
+    min-height: 100%;
+}
+
+.study-title{
+    height: 80px;
+    width: 200px;
+    background-color: rgba(255,255,255,0.5);
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 10px 15px 9px rgba(21, 78, 107,0.99);
+    box-shadow: 0px 10px 15px 9px rgba(21, 78, 107,0.99);
+}
+
+.study-title h2 {
+    font-weight: 700;
+}
+
+
+.timeline-container{
+
+}

@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import { Navbar} from 'react-bootstrap'
 import './navbar.css'
-import Logo from '../../assets/img/logo.png'
+import Logo from '../../assets/img/Icon.png'
 import {Link} from "react-router-dom";
 
 
@@ -91,7 +91,7 @@ const NavbarComponent = (props) => {
         <div className={`sidebar ${props.show ? '' : 'unActive'}`}>
             <div className='sidebar__content'>
                 <Navbar.Brand className='sidebar__logo-container'>
-                    <img src={Logo} height={50} width={50} alt="logo"/>
+                    <img src={Logo} height={70} width={70} alt="logo"/>
                     <h3>Santiago Herrera</h3>
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white"
                          className="bi bi-list toggle-button" viewBox="0 0 16 16"

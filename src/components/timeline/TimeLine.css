@@ -1,0 +1,19 @@
+
+.vertical-timeline-element-date{
+    text-shadow: 5px 5px 5px #000000;
+    margin: 0 20px;
+    color: white;
+}
+
+.vertical-timeline-element-icon{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+}
+
+.vertical-timeline-element-icon img{
+   height: 100%
+}
