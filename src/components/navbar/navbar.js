@@ -10,41 +10,48 @@ const NavbarComponent = (props) => {
 
     const [localNavItems, setLocalNavItems] = useState([
         {
-            'title': 'Home',
-            'route': '/home#header',
-            'isActive': true
+            title: 'Home',
+            route: '/home#header',
+            isActive: true,
+            absolute: true
         },
         {
-            'title': 'About me',
-            'route': '/home#about-me',
-            'isActive': false
+            title: 'About me',
+            route: '/home#about-me',
+            isActive: false,
+            absolute: false
         },
         {
-            'title': 'Study',
-            'route': '/home#',
-            'isActive': false
+            title: 'Study',
+            route: '/home#study',
+            isActive: false,
+            absolute: false
         },
         {
-            'title': 'Contact me',
-            'route': '/home#',
-            'isActive': false
+            title: 'Contact me',
+            route: '/home#',
+            isActive: false,
+            absolute: false
         }
     ])
     const [navItems, setNavItems] = useState([
         {
-            'title': 'Skills',
-            'route': '/skills',
-            'isActive': false
+            title: 'Skills',
+            route: '/skills',
+            isActive: false,
+            absolute: true
         },
         {
-            'title': 'Personal projects',
-            'route': '/',
-            'isActive': false
+            title: 'Personal projects',
+            route: '/',
+            isActive: false,
+            absolute: true
         },
         {
-            'title': 'Experience',
-            'route': '/',
-            'isActive': false
+            title: 'Experience',
+            route: '/',
+            isActive: false,
+            absolute: true
         },
     ])
     const [toggleMovileNav, setToggleMovileNav]  =  useState(false)
@@ -55,13 +62,25 @@ const NavbarComponent = (props) => {
             <div className={`sidebar__items ${toggleMovileNav ? '' : 'unToggleMovile'}`}>
                 {
                     list.map((item) => {
-                        return(
-                            <Link className={`nav-link sidebar__items--item ${item.isActive ? 'active' : ''}`}
-                               to={item.route}
-                               onClick={()=>{selectItem(item.title)}} >
-                                {item.title}
-                            </Link>
-                        )
+                        if(list.absolute){
+                            return(
+                                <Link className={`nav-link sidebar__items--item ${item.isActive ? 'active' : ''}`}
+                                      to={item.route}
+                                      onClick={()=>{selectItem(item.title)}} >
+                                    {item.title}
+                                </Link>
+                            )
+                        }else{
+                            return(
+                                <a className={`nav-link sidebar__items--item ${item.isActive ? 'active' : ''}`}
+                                      href={item.route}
+                                      onClick={()=>{selectItem(item.title)}} >
+                                    {item.title}
+                                </a>
+                            )
+                        }
+
+
                     })
                 }
             </div>
