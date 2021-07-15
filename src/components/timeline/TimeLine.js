@@ -2,11 +2,21 @@ import React from "react";
 import {VerticalTimeline, VerticalTimelineElement} from "react-vertical-timeline-component";
 import 'react-vertical-timeline-component/style.min.css';
 import './TimeLine.css'
-import WorkIcon from '../../assets/svg/cucumber_icon.svg'
-import studies from '../../assets/js/studies'
 
-const TimeLine = () => {
+const TimeLine = (props) => {
 
+    const studies = props.studies
+
+    // studies.map((study) => {
+    //     console.log(study.extras)
+    // })
+
+    const handleButton = (study) => {
+        props.setFilter(study.institution.toLowerCase())
+        props.onOpenModal()
+        props.setTitleModal(study.institution.toUpperCase())
+        props.setImgModal(study.icon)
+    }
 
     return (
         <VerticalTimeline>
@@ -21,14 +31,23 @@ const TimeLine = () => {
                             iconStyle={{ background: 'black', color: '#fff' }}
                             icon={<img src={study.icon} className={'timeline-icon'}/>}
                         >
-                            <h4 className="vertical-timeline-element-title">{study.institution}</h4>
-                            <h5 className="vertical-timeline-element-subtitle">{study.place}</h5>
+                            <h4 className="vertical-timeline-element-title">{study.title}</h4>
+                            <h5 className="vertical-timeline-element-subtitle">{study.institution}</h5>
                             <p>
-                                {study.title}
+                                {study.place}
                             </p>
+
+                            {(study.section === 'formal' && study.extras === true ) ?
+                                <button
+                                    className={'btn my-btn-primary'}
+                                    onClick={() => {handleButton(study)}}
+                                >View details</button> :
+                                null
+                            }
                         </VerticalTimelineElement>
                     )
-                })
+                }
+                )
             }
         </VerticalTimeline>
     )

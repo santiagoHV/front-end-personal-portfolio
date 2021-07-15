@@ -18,3 +18,8 @@ code {
 .particles-js.navUnToggle{
     width: 100%
 }
+
+.my-btn-primary{
+    background-color: rgb(21, 78, 107) !important;
+    color: white !important;
+}
