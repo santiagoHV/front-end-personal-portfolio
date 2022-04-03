@@ -35,7 +35,7 @@
     text-align: center;
     border-radius: 20px;
     -webkit-box-shadow: 0px 10px 15px 9px rgba(21, 78, 107,0.99);
-    box-shadow: 0px 10px 15px 9px rgba(21, 78, 107,0.99);
+    box-shadow: 1px 5px 15px 10px rgba(21, 78, 107,0.99);
 }
 
 .study-title h2 {

@@ -44,6 +44,9 @@ const TimeLine = (props) => {
                                 >View details</button> :
                                 null
                             }
+                            {
+                                study.link ? <a href={study.link} target="_blank">Certificate</a> : null
+                            }
                         </VerticalTimelineElement>
                     )
                 }

@@ -21,18 +21,24 @@ import FUNJS from '../img/fundamentosjs.png'
 import PENSAPY from '../img/pensapy.png'
 import PROGIT from '../img/profgit.png'
 import REACT from '../img/react.png'
+import TERMINAL from '../img/terminal.png'
+import SCOPE from '../img/scope.png'
+import SELENIUM from '../img/selenium.png'
+import NPM from '../img/npm.png'
+import HOOKS from '../img/hooks.png'
+import DISCRETAS from '../img/discretas.png'
 
 export default [
-    {
-        institution: 'Colegio Fundación Manuel Aya',
-        place: 'Fusagasugá, Colombia',
-        time: '2012 - 2018',
-        title: 'High School',
-        extras: '',
-        link: '',
-        icon: CFMA,
-        section: 'formal'
-    },
+    // {
+    //     institution: 'Colegio Fundación Manuel Aya',
+    //     place: 'Fusagasugá, Colombia',
+    //     time: '2012 - 2018',
+    //     title: 'High School',
+    //     extras: '',
+    //     link: '',
+    //     icon: CFMA,
+    //     section: 'formal'
+    // },
     {
         institution: 'Universidad Distrital Francisco José de Caldas',
         place: 'Bogotá DC, Colombia',
@@ -86,6 +92,16 @@ export default [
     {
         institution: 'Platzi',
         place: 'Remote study',
+        time: '26/12/2020',
+        title: 'Introducción a terminal y línea de comandos',
+        extras: 'certificate',
+        link: 'https://drive.google.com/file/d/1ICp7Xzhaq71r3QjogkPv20D21HxtSjuB/view?usp=sharing',
+        icon: TERMINAL,
+        section: 'platzi'
+    },
+    {
+        institution: 'Platzi',
+        place: 'Remote study',
         time: '15/12/2020',
         title: 'Fundamentos de ingeniería de software',
         extras: 'certificate',
@@ -126,8 +142,18 @@ export default [
     {
         institution: 'Platzi',
         place: 'Remote study',
+        time: '02/01/2021',
+        title: 'Matemáticas discretas',
+        extras: 'certificate',
+        link: 'https://drive.google.com/file/d/1Mrrb5hp_B7lWbY5rQG7zDzBQ5TqigLNB/view?usp=sharing',
+        icon: DISCRETAS,
+        section: 'platzi'
+    },
+    {
+        institution: 'Platzi',
+        place: 'Remote study',
         time: '03/01/2021',
-        title: 'Pensamiento comutacional con Python',
+        title: 'Pensamiento computacional con Python',
         extras: 'certificate',
         link: 'https://drive.google.com/file/d/1cb55oC3CvFLonrk7vQKAkxgrobjg0--x/view?usp=sharing',
         icon: PENSAPY,
@@ -186,6 +212,16 @@ export default [
     {
         institution: 'Platzi',
         place: 'Remote study',
+        time: '22/01/2021',
+        title: 'Introducción a Selenium con Python',
+        extras: 'certificate',
+        link: 'https://drive.google.com/file/d/1y0lHTXP0nMHZCeSnqg5K7xcYk-SVf7KR/view?usp=sharing',
+        icon: SELENIUM,
+        section: 'platzi'
+    },
+    {
+        institution: 'Platzi',
+        place: 'Remote study',
         time: '29/01/2021',
         title: 'Asincronismo con JavaScript',
         extras: 'certificate',
@@ -216,11 +252,31 @@ export default [
     {
         institution: 'Platzi',
         place: 'Remote study',
+        time: '24/03/2021',
+        title: 'Closures y scope en JavaScript',
+        extras: 'certificate',
+        link: 'https://drive.google.com/file/d/1if5rf0F3Gj-gv52cBcJhth6VfOwfQZtO/view?usp=sharing',
+        icon: SCOPE,
+        section: 'platzi'
+    },
+    {
+        institution: 'Platzi',
+        place: 'Remote study',
         time: '21/03/2021',
         title: 'Flask',
         extras: 'certificate',
         link: 'https://drive.google.com/file/d/1hd_n_OYb8QSr0PdP0PXxdBSH6kVdcSiU/view?usp=sharing',
         icon: FLASK,
+        section: 'platzi'
+    },
+    {
+        institution: 'Platzi',
+        place: 'Remote study',
+        time: '27/03/2021',
+        title: 'Gestión de dependencias y paquetes con NPM',
+        extras: 'certificate',
+        link: 'https://drive.google.com/file/d/1j13JtFzvP49di_Pvt7nymx26vQC2lf4I/view?usp=sharing',
+        icon: NPM,
         section: 'platzi'
     },
     {
@@ -241,6 +297,16 @@ export default [
         extras: 'certificate',
         link: 'https://drive.google.com/file/d/1-mpzSqyTDFsN87f7jUURfX3E2IubY7IR/view?usp=sharing',
         icon: REACT,
+        section: 'platzi'
+    },
+    {
+        institution: 'Platzi',
+        place: 'Remote study',
+        time: '15/07/2021',
+        title: 'Profesional de React Hooks',
+        extras: 'certificate',
+        link: 'https://drive.google.com/file/d/1MlJl8-5zpZAyZGtE5TmtDG58xw-MQCms/view?usp=sharing',
+        icon: HOOKS,
         section: 'platzi'
     },
     {

@@ -6,6 +6,7 @@ import {BrowserRouter as Router, Switch, Route, Redirect} from 'react-router-dom
 import Navbar from './components/navbar/navbar'
 import AboutPage from './pages/about'
 import Skills from "./pages/skills/skills";
+import Alert from './components/Alert/Alert'
 
 // import './assets/js/app'
 
@@ -17,6 +18,7 @@ function App() {
   return (
     <Router>
       {/*<button onClick={()=>{setToggleSide(!toggleSide)}}>desplegar</button>*/}
+      <Alert message='Platform in responsive and functional maintenance and growth'/>
       <Navbar show={toggleSide}/>
       <div className={`content ${toggleSide ? '' : 'navUnToggle'} `}>
           <Switch  >

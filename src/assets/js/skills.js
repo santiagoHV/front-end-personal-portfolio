@@ -29,8 +29,7 @@ import Rails from '../svg/rails_icon.svg'
 import Cucumber from '../svg/cucumber_icon.svg'
 import Selenium from '../svg/selenium_icon.svg'
 
-export default [
-    {
+export default [{
         "name": "HTML5",
         "percent": 80,
         "svg": html,
@@ -56,7 +55,7 @@ export default [
     },
     {
         "name": "TypeScript",
-        "percent": 65,
+        "percent": 30,
         "svg": Typescript,
         "inProgress": false,
         "category": "language",
@@ -64,7 +63,7 @@ export default [
     },
     {
         "name": "Python",
-        "percent": 80,
+        "percent": 60,
         "svg": Python,
         "inProgress": true,
         "category": "language",
@@ -72,7 +71,7 @@ export default [
     },
     {
         "name": "Java",
-        "percent": 85,
+        "percent": 60,
         "svg": Java,
         "inProgress": false,
         "category": "language",
@@ -96,7 +95,7 @@ export default [
     },
     {
         "name": "Ruby",
-        "percent": 45,
+        "percent": 50,
         "svg": Ruby,
         "inProgress": true,
         "category": "language",
@@ -104,7 +103,7 @@ export default [
     },
     {
         "name": "Flutter",
-        "percent": 60,
+        "percent": 50,
         "svg": Flutter,
         "inProgress": true,
         "category": "framework",
@@ -112,7 +111,7 @@ export default [
     },
     {
         "name": "React.js",
-        "percent": 50,
+        "percent": 65,
         "svg": Reactjs,
         "inProgress": true,
         "category": "framework",
@@ -120,7 +119,7 @@ export default [
     },
     {
         "name": "Angular",
-        "percent": 25,
+        "percent": 20,
         "svg": Angular,
         "inProgress": false,
         "category": "framework",
@@ -136,39 +135,39 @@ export default [
     },
     {
         "name": "Flask",
-        "percent": 85,
+        "percent": 60,
         "svg": Flask,
         "inProgress": true,
         "category": "framework",
         "sub-category": "back-end"
     },
     {
-        "name": "Django",
-        "percent": 0,
+        "name": "Django Rest Framework",
+        "percent": 30,
         "svg": Django,
         "inProgress": false,
         "category": "framework",
         "sub-category": "back-end"
     },
-    {
-        "name": "Pytorch",
-        "percent": 10,
-        "svg": Pytorch,
-        "inProgress": false,
-        "category": "framework",
-        "sub-category": "data ia"
-    },
-    {
-        "name": "TensorFlow",
-        "percent": 15,
-        "svg": TensorFlow,
-        "inProgress": true,
-        "category": "framework",
-        "sub-category": "data ia"
-    },
+    // {
+    //     "name": "Pytorch",
+    //     "percent": 10,
+    //     "svg": Pytorch,
+    //     "inProgress": false,
+    //     "category": "framework",
+    //     "sub-category": "data ia"
+    // },
+    // {
+    //     "name": "TensorFlow",
+    //     "percent": 15,
+    //     "svg": TensorFlow,
+    //     "inProgress": true,
+    //     "category": "framework",
+    //     "sub-category": "data ia"
+    // },
     {
         "name": "Scrum",
-        "percent": 40,
+        "percent": 50,
         "svg": "",
         "inProgress": true,
         "category": "...",
@@ -192,7 +191,7 @@ export default [
     },
     {
         "name": "Github",
-        "percent": 70,
+        "percent": 50,
         "svg": Github,
         "inProgress": true,
         "category": "tech",
@@ -232,7 +231,7 @@ export default [
     },
     {
         "name": "Node.js/NPM",
-        "percent": 60,
+        "percent": 40,
         "svg": Node,
         "inProgress": true,
         "category": "tech",
@@ -248,7 +247,7 @@ export default [
     },
     {
         "name": "MongoDB",
-        "percent": 70,
+        "percent": 60,
         "svg": MongoDB,
         "inProgress": true,
         "category": "tech",
@@ -256,7 +255,7 @@ export default [
     },
     {
         "name": "Ruby on rails",
-        "percent": 40,
+        "percent": 50,
         "svg": Rails,
         "inProgress": true,
         "category": "framework",
@@ -264,7 +263,7 @@ export default [
     },
     {
         "name": "Cucumber",
-        "percent": 15,
+        "percent": 20,
         "svg": Cucumber,
         "inProgress": false,
         "category": "tech",
@@ -272,7 +271,7 @@ export default [
     },
     {
         "name": "Vue.js",
-        "percent": 0,
+        "percent": 20,
         "svg": Vue,
         "inProgress": false,
         "category": "framework",

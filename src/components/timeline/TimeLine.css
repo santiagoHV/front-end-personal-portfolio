@@ -21,3 +21,11 @@
 .vertical-timeline-element-icon img{
    height: 100%
 }
+
+.vertical-timeline-element--work h5{
+    color: rgb(21, 78, 107);
+}
+
+.vertical-timeline-element--work a{
+    color: black;
+}

@@ -1,13 +1,16 @@
 export default {
     "name": "Santiago Herrera Velásquez",
-    "titles": ["Systems engineer student","Developer in development"],
-    "description": "I'm %%%, a young engineer system student, passionate about learning and good challenges. Actually i'm a fullstack developer and mobile developer in learning progress, i really enjoy to use and learn the newest technologies, languajes and frameworks, to be agree with the las tendences of the market.",
-    "birthdate": "2001/10/23",
+    "titles": ["Systems engineer student", "Web developer"],
+    "description": "I'm %%% a young student of engineering systems passionate about learning and\n" +
+        "good challenges. Currently, I am a fullstack and mobile web developer in the\n" +
+        "learning process with knowledge in agile frameworks; I really enjoy using and learning the latest technologies, languages\n" +
+        "and frameworks to be in accordance with market trends.",
+    "birthdate": new Date(2001, 10, 23),
     "city-from": "Bogotá DC",
     "country-from": "Colombia",
-    "city-live": "Fusagasugá",
+    "city-live": "Bogotá DC",
     "country-live": "Colombia",
-    "mails": ["santiherreravelas@gmail.com","sherrerav@correo.udistrital.edu.co"],
-    "interests": ["Web development","Mobile development", "Front-end development", "Back-end development","Data science","AI"],
+    "mails": ["santiherreravelas@gmail.com", "sherrerav@correo.udistrital.edu.co"],
+    "interests": ["Web development", "Mobile development", "Front-end development", "Back-end development", "Data science", "AI"],
     "hobby-interests": ["Music edition", "Guitar and bass playing", "Basketball"]
 }

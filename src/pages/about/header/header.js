@@ -30,7 +30,7 @@ const HeaderAbout = ({showNav}) => {
                     </Row>
                     <Row className="center-box--text">
                         <Col xs={12} md={10} className="m-auto">
-                            <h2>DEVELOPER IN DEVELOPMENT</h2>
+                            <h2>WEB DEVELOPER</h2>
                         </Col>
                     </Row>
                     <Row>

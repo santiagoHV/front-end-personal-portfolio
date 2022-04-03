@@ -7,8 +7,16 @@ import aboutme from "../../../assets/js/aboutme";
 const PersonalInfo = () => {
 
     const name = () => (<strong>{aboutme.name}</strong>)
-
     const description = () => aboutme.description.replace('%%%',`{${name()}}`)
+    const today = new Date();
+    const formattedBirthday = `${aboutme.birthdate.getDate()}/${aboutme.birthdate.getMonth()}/${aboutme.birthdate.getFullYear()}`;
+    let age = today.getFullYear() - aboutme.birthdate.getFullYear();
+
+    var m = today.getMonth() - aboutme.birthdate.getMonth();
+
+    if (m < 0 || (m === 0 && today.getDate() < aboutme.birthdate.getDate())) {
+        age--;
+    }
 
     const description2 = aboutme.description.split('%%%')
     return (
@@ -28,10 +36,10 @@ const PersonalInfo = () => {
                         </Row>
                         <Row>
                             <Col lg={{span: 5, offset: 1}} className={'info-container__info--item'}>
-                                <strong>Birthdate: </strong> {aboutme.birthdate}
+                                <strong>Birthdate: </strong> {formattedBirthday}
                             </Col>
                             <Col lg={{span: 5, offset: 0}} className={'info-container__info--item'}>
-                                <strong>Age:</strong> 19
+                                <strong>Age:</strong> {age}
 
                             </Col>
                         </Row>
